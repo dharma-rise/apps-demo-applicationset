@@ -16,9 +16,12 @@ spec:
     spec:
       project: '{{projectname}}'
       source:
-        repoURL: https://github.com/argoproj/applicationset.git
-        targetRevision: HEAD
-        path: "examples/git-generator-files-discovery/apps/guestbook"
+        - repoURL: https://github.com/argoproj/applicationset.git
+          targetRevision: HEAD
+          path: "examples/git-generator-files-discovery/apps/guestbook"
+        - repoURL: https://github.com/igstbagusdharmaputra/apps-demo-applicationset.git
+          targetRevision: HEAD
+          path: "secret"
       destination:
         server: 'https://kubernetes.default.svc'
         namespace: guestbook
