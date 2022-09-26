@@ -18,7 +18,7 @@ spec:
       source:
         chart: hashicorp/consul
         repoURL: "https://helm.releases.hashicorp.com"
-        targetRevision: 1.12.3
+        targetRevision: 0.46.1
         helm:
           releaseName: consul
           valueFiles:
