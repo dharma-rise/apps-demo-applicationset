@@ -16,15 +16,13 @@ spec:
     spec:
       project: '{{projectname}}'
       source:
-        path: helm-guestbook
-        repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
-        targetRevision: master
+        path: hashicorp/consul
+        repoURL: "https://helm.releases.hashicorp.com"
+        targetRevision: 1.12.3
         helm:
-          releaseName: my-release
+          releaseName: consul
           valueFiles:
           - values.yaml
-          values: |-
-            {{values}}
       destination:
         server: 'https://kubernetes.default.svc'
         namespace: guestbook
