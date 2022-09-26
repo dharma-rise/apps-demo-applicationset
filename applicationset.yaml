@@ -16,7 +16,7 @@ spec:
     spec:
       project: '{{projectname}}'
       source:
-        path: hashicorp/consul
+        chart: hashicorp/consul
         repoURL: "https://helm.releases.hashicorp.com"
         targetRevision: 1.12.3
         helm:
