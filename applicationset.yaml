@@ -9,19 +9,22 @@ spec:
       repoURL: https://github.com/igstbagusdharmaputra/apps-demo-applicationset.git
       revision: main
       files:
-      - path: "config/values.yaml"
+      - path: "config/*.yaml"
   template:
     metadata:
       name: '{{appname}}'
     spec:
       project: '{{projectname}}'
       source:
-        - repoURL: https://github.com/argoproj/applicationset.git
-          targetRevision: HEAD
-          path: "examples/git-generator-files-discovery/apps/guestbook"
-        - repoURL: https://github.com/igstbagusdharmaputra/apps-demo-applicationset.git
-          targetRevision: HEAD
-          path: "secret"
+        path: helm-guestbook
+        repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
+        targetRevision: master
+        helm:
+          releaseName: my-release
+          valueFiles:
+          - values.yaml
+          values: |-
+            {{values}}
       destination:
         server: 'https://kubernetes.default.svc'
         namespace: guestbook
