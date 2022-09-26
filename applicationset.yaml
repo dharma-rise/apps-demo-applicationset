@@ -16,11 +16,11 @@ spec:
     spec:
       project: '{{projectname}}'
       source:
-        chart: consul
-        repoURL: "https://helm.releases.hashicorp.com"
-        targetRevision: 0.46.1
+        chart: jetstack
+        repoURL: "https://charts.jetstack.io"
+        targetRevision: 1.9.1
         helm:
-          releaseName: consul
+          releaseName: jetstack
           valueFiles:
           - values.yaml
       destination:
