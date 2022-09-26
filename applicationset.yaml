@@ -16,11 +16,11 @@ spec:
     spec:
       project: '{{projectname}}'
       source:
-        chart: jetstack
+        chart: certmanager
         repoURL: "https://charts.jetstack.io"
-        targetRevision: 1.9.1
+        targetRevision: v1.9.1
         helm:
-          releaseName: jetstack
+          releaseName: certmanager
           valueFiles:
           - values.yaml
       destination:
