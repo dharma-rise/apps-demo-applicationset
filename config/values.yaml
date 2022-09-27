@@ -1,5 +1,1 @@
-appname: testing
-projectname: default
-values: |
-  replicaCount: 3
-# testing lagii
+more tests
