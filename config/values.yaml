@@ -1,1 +1,5 @@
-YXBwbmFtZTogdGVzdGluZwpwcm9qZWN0bmFtZTogZGVmYXVsdAp2YWx1ZXM6IHwKICByZXBsaWNhQ291bnQ6IDMKIyB0ZXN0aW5nIGxhZ2lp
+appname: testing
+projectname: default
+values: |
+  replicaCount: 3
+# testing lagii
