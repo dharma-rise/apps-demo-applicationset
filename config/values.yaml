@@ -1,4 +1,4 @@
 appname: testing
 projectname: default
 values: |
-  replicaCount: 2
+  replicaCount: 3
