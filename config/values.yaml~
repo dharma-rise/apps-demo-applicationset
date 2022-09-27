@@ -1,0 +1,5 @@
+# Update lagi!!!
+appname: testing
+projectname: default
+values: |
+  replicaCount: 3
