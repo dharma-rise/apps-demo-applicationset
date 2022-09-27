@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 appname: testing
 projectname: default
 values: |
+=======
+appname: testing
+projectname: default
+values: |
+>>>>>>> 2d80c603733a431a0065debfadded04550a5a275
   replicaCount: 3
